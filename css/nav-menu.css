@@ -1,0 +1,27 @@
+.navbar{
+    background-color: #333;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.navbar li a{
+    overflow: hidden;
+    background-color: #333;
+    word-spacing: 2px;
+}
+
+.navbar a,
+.navbar button{
+    text-transform: capitalize;
+    font-family: Lato;
+    font-weight: 300;
+    color: white !important;
+}
+
+
+.navbar li a:hover,
+.navbar li:hover,
+.dropdown.open > a{
+    background-color: #e67e22 !important;
+}

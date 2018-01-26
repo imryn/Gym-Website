@@ -1,0 +1,43 @@
+
+
+/* big tablt to 1200px */
+@media only screen and (max-width: 1200px){
+    
+    .health-video > p {font-size: 20px;}
+	  .health-video {
+        width: 320px;
+        margin-left: 145px;
+    }
+    p {margin: 10px 0 5px 0;}
+    h3 {font-size: 25px; }
+      
+}
+
+
+/* small phones to small tablets: from 481px to 844px */
+@media only screen and (max-width: 732px){
+
+    .slideshow-container {max-width: 480px;}
+     h3 {font-size: 27px; }
+    .health-video > p {font-size: 24px;}
+    .health-video {
+        width: 280px;
+        margin-left: 55px;
+    }
+    .increase-muscle{font-size: 24px;}
+    
+}
+
+
+/* small phones: from 0 to 480px */
+@media only screen and (max-width: 480px){
+   
+  .slideshow-container {display: none;}    
+  .health-video > p {font-size: 14px;}
+  .health-video {
+      width: 190px;
+      margin-left: 20px;
+    }
+  .increase-muscle{font-size: 14px;}
+   
+}

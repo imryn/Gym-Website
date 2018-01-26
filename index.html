@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" </>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="/vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="/vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="/vendors/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/css/nav-menu.css">
+        <link rel="stylesheet" type="text/css" href="/slide-show/slide-show.css">
+        <link rel="stylesheet" type="text/css" href="/css/animate.css"> 
+        <link rel="stylesheet" type="text/css" href="/css/queries.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <script src="/vendors/js/jquery-3.2.1.min.js"></script>
+        <script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
+
+    <title>gym</title>
+</head>
+    
+<body>
+    <header>
+        <div class="slideshow-container"></div>
+        <div class="navbar"></div>
+    </header>
+    
+    
+    <section class="features">
+            <h1>  gym</h1>
+            <img class="shape" src="vendors/pictures/1467119478773655334.jpg" alt="woman and man are running">
+            <p>
+               Healthy Shape club operates over 15 years in the world, 
+               with the highest standards in all areas of fitness and health - gym, studio classes,
+               nutrition workshops, personal training, healthy living and more.
+               The Healthy Shape chain is spread throughout the country in 20 clubs.
+               The chain's courses provide high-level training spaces, using advanced fitness equipment in every field.
+            </p>
+    </section>
+    
+    
+    <section class="contact-us">
+        <form>
+            <h1 class="cont"> contact us </h1>
+            <div class="contact-info">
+              <label for="name"> name: </label>
+               <input type="text" id="name"/> 
+            </div>
+            
+              <div class="contact-info">
+              <label for="phone"> phone: </label>
+              <input type="tel" id="phone" maxlength="10"/>
+            </div> 
+            
+            <div class="contact-info">
+              <label for="email">e-mail: </label>
+              <input type="email" id="email"/> 
+            </div> 
+        
+             <div class="contact-info">
+                <label> branch: </label>
+                 <select name="options" size="1"> 
+                        <option value="Tel-Aviv - Dizengoff 50 "> Tel-Aviv - Dizengoff 50  </option>
+                        <option value="Tel-Aviv - Bnei Ephraim 32" selected> Tel-Aviv - Bnei Ephraim 32 </option>
+                        <option value="Rishon Lezion - Rothschild 10"> Rishon Lezion - Rothschild 10  </option> </select>
+            </div>
+            
+            <input type="submit" value="send" title="not implemented"/>
+        </form>
+    </section>
+    
+    <section class="open-information">
+        <div class="row">
+           <div class="col span-1-of-3 box">
+                    <i class="ion-map icon-big"> </i>
+                <h2> address </h2>
+               <div class="info-feature"> 
+                    Dizengoff 50, Tel-Aviv Jaffa </div>  
+           </div>
+                                        
+         <div class="col span-1-of-3 box">
+                <i class="ion-clock icon-big"> </i>
+                    <h2 class="open"> opening hours </h2>
+             <div class="info-feature">
+                 sunday - monday 6:00-24:00</div>
+             <div class="info-feature">
+                 friday - 7:00-19:00</div>
+             <div class="info-feature">
+                 saterday 9:00-22:00  </div>
+         </div>  
+            <div class="col span-1-of-3 box">
+                    <i class="ion-iphone icon-big"> </i>
+              <h2>  contact </h2>
+              <div class="info-feature">phone: 03 - 6955876</div>
+              <a href="#" class="btn-app " title="not implemented"> <img src="http://www.freeiconspng.com/uploads/vector-logos-high-resolution-logos-logo-designs-facebook-icon-vector-6.png" alt="Facebook button"> </a>
+              <a href="#" class="btn-app" title="not implemented"> <img src="http://media.idownloadblog.com/wp-content/uploads/2016/10/2000px-New_Logo_Gmail.svg_.png" alt="Gmail button"> </a>
+           </div>
+        </div>
+    </section>
+    
+    <footer>
+			© Healty Shape 2017 - Imry Noy, Liron Baruch &amp; Shay Shwartz
+    </footer>
+    
+      <script src="/vendors/js/jquery.waypoints.min.js"> </script>
+      <script src="/slide-show/slide-show.js"></script>
+    <script>
+         $.get("/nav-menu/nav-menu.html", function(template){
+             document.querySelector(".navbar").innerHTML = template;
+         });
+         $.get("/slide-show/slide-show.html", function(template){
+             document.querySelector(".slideshow-container").innerHTML = template;
+             showSlides();
+         });
+   </script>
+</body>
+</html>  

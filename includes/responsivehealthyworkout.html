@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" </>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="/vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="/vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="/vendors/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/css/nav-menu.css">
+        <link rel="stylesheet" type="text/css" href="/slide-show/slide-show.css">
+        <link rel="stylesheet" type="text/css" href="/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="/css/queries.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <script src="/vendors/js/jquery-3.2.1.min.js"> </script>
+        <script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <title> Responsive Page - Healthy Workout </title>
+</head>
+    
+<body>
+     <header>
+        <div class="slideshow-container"></div>
+        <div class="navbar"> </div>
+    </header>
+    
+    <section class="Healthy-Workout">
+        <div class="row">
+            <h3> Healthy Workout </h3>
+                <div class="colm span-1-of-2 box">
+                    <div class="health-video">
+                        <iframe src="https://www.youtube.com/embed/L77b57erQ4M" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                        <p class="health-explanation">
+                           in this video you will learn 10 basic workouts
+                           basically for people who's never
+                           started working out and just want
+                           to start seeing their muscles increase.  
+                        </p>
+                    </div>
+                </div>
+                <div class="colm span-1-of-1 box">
+                    <div class="health-video">
+                        <iframe src="https://www.youtube.com/embed/MtHUuINkYZA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                        <p class="health-explanation">
+                           this video is for people who want to loose
+                           some weight and would like to
+                           eat the right mix of healthy carbohydrates
+                           and proterin.
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+             <div class="colm span-1-of-2 box">
+                    <div class="health-video">
+                        <iframe src="https://www.youtube.com/embed/qZTGgEWPbLk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                        <p class="health-explanation">
+                           in this video you will learn how to do basic streches.
+                           this video is for beginners trainners.
+                        </p>
+                    </div>
+                </div>
+                <div class="colm span-1-of-1 box">
+                    <div class="health-video">
+                        <iframe src="https://www.youtube.com/embed/3iAn9Z9FUEM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen ></iframe>
+
+                        <p class="health-explanation">
+                            this video is for people who like to
+                            eat nutritious post-workout fully vegan
+                            whole food plant-based meals.
+                        </p>
+                </div>
+            </div>
+     </div>
+        <div>
+            <p  class="increase-muscle"> for more information about how to increase your muscle mass, please press <a class="button button-g" href="https://www.kilogram.co.il/74/%D7%94%D7%9E%D7%93%D7%A8%D7%99%D7%9A-%D7%94%D7%A9%D7%9C%D7%9D-%D7%9C%D7%94%D7%A2%D7%9C%D7%90%D7%94-%D7%91%D7%9E%D7%A1%D7%AA-%D7%94%D7%A9%D7%A8%D7%99%D7%A8/"> here </a> </p>
+        </div>
+    </section>
+    
+    <script src="/vendors/js/jquery.waypoints.min.js"> </script>
+      <script src="/slide-show/slide-show.js"></script>
+       
+      <script>
+          $.get("/nav-menu/nav-menu.html", function(template){
+             document.querySelector(".navbar").innerHTML = template;
+          });
+          $.get("/slide-show/slide-show.html", function(template){
+              document.querySelector(".slideshow-container").innerHTML = template;
+              showSlides();
+          });
+      </script>
+   </body>
+</html>

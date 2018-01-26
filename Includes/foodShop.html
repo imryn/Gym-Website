@@ -1,0 +1,183 @@
+
+<?php include('connect.php');?>
+<!DOCTYPE html>
+
+<html>
+<head>
+           <meta charset="utf-8" </>
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+           <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css">
+           <link rel="stylesheet" type="text/css" href="/vendors/css/grid.css">
+           <link rel="stylesheet" type="text/css" href="/vendors/bootstrap/css/bootstrap.min.css">
+           <link rel="stylesheet" type="text/css" href="/css/style2.css">
+           <link rel="stylesheet" type="text/css" href="/css/nav-menu.css">
+           <link rel="stylesheet" type="text/css" href="/slide-show/slide-show.css">
+           <link rel="stylesheet" type="text/css" href="/css/queries.css">
+		   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+           <script src="/vendors/js/jquery-3.2.1.min.js"></script>
+           <script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
+           <title>gym</title>
+</head>
+<body>
+     <header>
+        <div class="slideshow-container"></div>
+        <div class="navbar"> </div>
+    </header>
+
+<p><h1>Order Page</h1></p>
+<form name="registration" method="post" action="connect.php">
+<center>
+<table border="1">
+			<tr>
+				<td><font>ID</font></td>
+                <td><div class="private-details"> <input type="number" name="id" value="" min="199999999" max="400000000" ><p></p></div></td>
+			</tr>
+			
+			<tr>
+				<td><font>Name</font></td>
+                <td><div class="private-details"> <input type="text" name="name" value=""><p></p></div></td>
+			</tr>
+			
+			<tr>
+				<td><font>Last Name</font></td>
+                <td><div class="private-details"> <input type="text" name="lastname" value=""><p></p></div></td>
+			</tr>
+			
+			<tr>
+				<td><font>Email</font></td>
+                <td><div class="private-details"> <input type="email" name="email" value=""><p></p></div></td>
+			</tr>
+			
+</table><br>
+
+<p><h2>Please select items from MENU and place order</h2></p>
+
+<table border="1">	
+		<tr>
+				<td><img src="/vendors/pictures/tuna.jpg" width="200" height="200"></td>
+				<td><center><font>Tuna Salad</font><br>
+				<font>Price 16 ILS</font><br>
+                <div class="food-menu">
+                    <select name="tuna" value="yes">
+                       <option value = "0">0</option>
+                       <option value = "1">1</option>
+                       <option value = "2">2</option>
+                       <option value = "3">3</option>
+                       <option value = "4">4</option>
+                    </select>
+                </div>   
+				</center><p></p>
+				</td><center>
+				
+			
+			
+			
+				<td><img src="/vendors/pictures/helbon.jpg" width="200" height="200"></td>
+				<td><center><font>Helbon Shake                </font><br>
+				<font>Price 10 ILS</font><br>
+                    <div class="food-menu">
+				       <select name="helbon" value="yes">
+                           <option value = "0">0</option>
+                           <option value = "1">1</option>
+                           <option value = "2">2</option>
+                           <option value = "3">3</option>
+                           <option value = "4">4</option>
+                       </select>
+                </div>
+				</center><p></p>
+				</td><center>
+				
+			
+			
+				<td><img src="/vendors/pictures/gainer.png" width="200" height="200"></td>
+				<td><center><font>Gainer Shake</font><br>
+				<font>Price 10 ILS</font><br>
+                    <div class="food-menu">
+				        <select name="gainer" value="yes">
+                           <option value = "0">0</option>
+                           <option value = "1">1</option>
+                           <option value = "2">2</option>
+                           <option value = "3">3</option>
+                           <option value = "4">4</option>
+                        </select>
+                    </div>
+				</center><p></p>
+				</td><center>
+				
+        </tr>
+        <tr>
+			
+				<td><img src="/vendors/pictures/wahter.jpg" width="200" height="200"></td>
+				<td><center><font>Water</font><br>
+				<font>Price 5 ILS</font><br>
+                    <div class="food-menu">
+                        <select name="wather" value="yes">
+                           <option value = "0">0</option>
+                           <option value = "1">1</option>
+                           <option value = "2">2</option>
+                           <option value = "3">3</option>
+                           <option value = "4">4</option>
+                        </select>
+                    </div>
+				</center><p></p>
+				</td><center>
+				
+			
+			
+				<td><img src="/vendors/pictures/soda.jpg" width="200" height="200"></td>
+				<td><center><font>Soft Drink</font><br>
+				<font>Price 8 ILS</font><br>
+                    <div class="food-menu">
+				        <select name="soda" value="yes">
+                           <option value = "0">0</option>
+                           <option value = "1">1</option>
+                           <option value = "2">2</option>
+                           <option value = "3">3</option>
+                           <option value = "4">4</option>
+                        </select>
+                    </div>
+				</center><p></p>
+				</td><center>
+
+			
+			
+			
+				<td><img src="/vendors/pictures/salad.jpg" width="200" height="200"></td>
+				<td><center><font>Fresh Vegi Salad</font><br>
+				<font>Price 13 ILS</font><br>
+                    <div class="food-menu">
+                        <select name="salad" value="yes">
+                           <option value = "0">0</option>
+                           <option value = "1">1</option>
+                           <option value = "2">2</option>
+                           <option value = "3">3</option>
+                           <option value = "4">4</option>
+                        </select>
+                    </div>
+				</center><p></p>
+				</td><center>
+				</center><p></p>
+		</tr>		
+</table>
+
+    <table>
+        <td><input type="submit" name="submit" value="submit">
+    </table>
+
+    </center>
+
+   </form>
+
+      <script src="/slide-show/slide-show.js"></script>
+       
+      <script>
+          $.get("/nav-menu/nav-menu.html", function(template){
+             document.querySelector(".navbar").innerHTML = template;
+          });
+          $.get("/slide-show/slide-show.html", function(template){
+              document.querySelector(".slideshow-container").innerHTML = template;
+              showSlides();
+          });
+      </script>
+</body>
+</html>

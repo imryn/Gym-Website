@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css">
+     <link rel="stylesheet" type="text/css" href="/vendors/css/grid.css">
+     <link rel="stylesheet" type="text/css" href="/vendors/bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="/css/nav-menu.css">
+     <link rel="stylesheet" type="text/css" href="/slide-show/slide-show.css">
+	 <link rel="stylesheet" type="text/css" href="/css/detailed.css">
+     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+     <script src="/vendors/js/jquery-3.2.1.min.js"></script>
+     <script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
+    
+    <title> Detailed Packages </title>
+</head>	
+	<body>
+         <header>
+          <div class="slideshow-container"></div>
+          <div class="navbar"> </div>
+        </header>
+        
+	<section class="Packages-Workout">
+        <img src="/vendors/pictures/houerstable.jpeg" alt="houerstable" width="1000" height="600">
+        <div class="row">
+            <div class="colm span-1-of-1 box">
+                <h2> Basic package - 100$</h2>
+                <div class="tool-tip">Zumba
+                 <span class="tooltip-text">Aerobic Dance combines South American music with Latin and international dance moves like salsa, rumba, cha-cha, samba, tango, belly dancing, hip-hop and more. Zumba allows you to burn calories, sculpt your body, shape muscle and work on cardio</span>
+                </div>
+                <div class="tool-tip">Spinning
+                  <span class="tooltip-text">Strenuous aerobic exercise performed on stationary bicycles. The lesson is an overwhelming experience filled with adrenalin. The spinning bikes simulate riding and allow regulating the level of difficulty</span>
+                </div>
+                <div class="tool-tip">Pilatis
+                  <span class="tooltip-text">The workout activates all muscle groups in the body, shapes, improves posture and flexibility, and helps to treat back problems and rehabilitation after injuries</span>
+                </div>
+                <div class="tool-tip">Swim-Fit
+                  <span class="tooltip-text">Swim Fit provides everything you need to motivate, challenge and support you to reach your fitness goals. Whether that is to lose weight, to tone, to improve technique or just to become a fitter and stronger. It is a fun and effective way to get those results you want, and because water is 800 times denser than air, you are most likely to get there a lot quicker than any other workout</span>
+                </div>
+                <div class="tool-tip">Cross-Fit
+                  <span class="tooltip-text">CrossFit is a strength and endurance training program based on a combination of cardio exercises, weight training and Olympic weight lifting. As part of the CrossFit training, most of the exercises are done in the world of weight lifting and weight-based exercises. For this purpose, we mainly use an Olympic pole, plate weights, kettlebell weights, voltages, rings and power balls. Sometimes tractor tires, sandbags and ropes are also used</span>
+                </div>
+                <div class="tool-tip">TRX
+                  <span class="tooltip-text">TRX training is carried out in small groups (up to 10 participants) where straps are used when the only resistance is the weight of the trainee. This method develops and improves the balance, flexibility, strength and core muscles that are responsible for its stability</span>
+                </div>
+           </div>
+        </div>
+</section>
+        
+         <script src="/slide-show/slide-show.js"></script>
+       
+      <script>
+          $.get("/nav-menu/nav-menu.html", function(template){
+             document.querySelector(".navbar").innerHTML = template;
+          });
+          $.get("/slide-show/slide-show.html", function(template){
+              document.querySelector(".slideshow-container").innerHTML = template;
+              showSlides();
+          });
+      </script>
+   </body>
+</html>

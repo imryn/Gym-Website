@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+           <meta charset="utf-8" </>
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+           <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css">
+           <link rel="stylesheet" type="text/css" href="/vendors/css/grid.css">
+           <link rel="stylesheet" type="text/css" href="/vendors/bootstrap/css/bootstrap.min.css">
+           <link rel="stylesheet" type="text/css" href="/css/nav-menu.css">
+           <link rel="stylesheet" type="text/css" href="/slide-show/slide-show.css">
+           <link rel="stylesheet" type="text/css" href="/css/package.css">
+           <link rel="stylesheet" type="text/css" href="/css/style2.css">
+		   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+           <script src="/vendors/js/jquery-3.2.1.min.js"></script>
+           <script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
+    
+    <title>Packages</title>
+</head>
+	
+<body>
+     <header>
+        <div class="slideshow-container"></div>
+        <div class="navbar"> </div>
+    </header>
+    <section class="packages">
+    <div class="promos">  
+        <div class="promo">
+            <div class="deal">
+                <span>Pro</span>
+                <span>High level athletes</span>
+            </div>
+            <span class="price">$200</span>
+            <ul class="features">
+                <li class="program-exp">Aqua Aerobic, Step</li>
+                <li class="program-exp">Yoga</li>
+                <li class="program-exp">And more...</li>   
+            </ul>
+        <a href="#" title="not implemented">  <button> More details</button>  </a>
+        </div>
+      <div class="promo scale">
+        <div class="deal">
+        <span>Platinum</span>
+        <span>Athletes that know what they want!</span>
+        </div>
+      <span class="price">$300</span>
+      <ul class="features">
+        <li class="program-exp">Tabata, Chair Yoga</li>
+        <li class="program-exp">Kick-boxing</li>
+        <li class="program-exp">And more...</li>   
+      </ul>
+         <a href="#" title="not implemented">  <button> More details</button>  </a>
+     </div>
+
+    <div class="promo">
+        <div class="deal">
+            <span>Basic</span>
+            <span>Beginners in the field</span>
+        </div>
+            <span class="price">$100</span>
+        <ul class="features">
+            <li class="program-exp">Zumba, Pilatis</li>
+            <li class="program-exp">Dynamic design</li>
+            <li class="program-exp">And more...</li>   
+        </ul>
+      <a href="/includes/detailedpackages.html">  <button> More details</button>  </a>
+        </div>
+     </div>
+</section>
+      <script src="/slide-show/slide-show.js"></script>
+       
+      <script>
+          $.get("/nav-menu/nav-menu.html", function(template){
+             document.querySelector(".navbar").innerHTML = template;
+          });
+          $.get("/slide-show/slide-show.html", function(template){
+              document.querySelector(".slideshow-container").innerHTML = template;
+              showSlides();
+          });
+      </script>
+</body>
+</html>
