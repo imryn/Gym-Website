@@ -10,11 +10,51 @@
     }
     p {margin: 10px 0 5px 0;}
     h3 {font-size: 25px; }
-      
+    
+    .features{
+      width:99%;
+      margin-left: 2%;
+    }
+    
+    .contact-us{
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 30px;
+        padding-bottom: 0;
+        border: solid 2px white;
+        border-radius: 25%;
+        background-color: #e67e22;
+    }
+
+    .contact-us h1{padding-right: 22px;}
+    
+    input[type="submit"]{
+      padding: 0;
+      width: 70px;
+      display: block;
+      margin-right: 43%;   
+    }
+    
+     .icon-big {
+        font-size: 160%;
+        display: inline-block;
+        margin-bottom: 10px;
+        padding-right: 8px;
+    }
+    
+    .ion-clock {
+        margin-left: -32px;
+        margin-top: 0;
+    }
+    
+    h2{
+        display: inline;
+        font-size: 25px;
+        text-transform: lowercase;
+    }
+
 }
-
-
-/* small phones to small tablets: from 481px to 844px */
+/* small phones to small tablets: from 481px to 732px */
 @media only screen and (max-width: 732px){
 
     .slideshow-container {max-width: 480px;}
@@ -26,6 +66,46 @@
     }
     .increase-muscle{font-size: 24px;}
     
+     .features{
+      width:99%;
+      margin-left: 2%;
+    }
+    
+    .contact-us{
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 30px;
+        padding-bottom: 0;
+        border: solid 2px white;
+        border-radius: 25%;
+        background-color: #e67e22;
+    }
+
+    .contact-us h1{padding-right: 22px;}
+    
+    input[type="submit"]{
+    padding: 0;
+    width: 70px;
+    display: block;
+    margin-right: 43%;
+    }
+    
+    h2{
+        display: inline;
+        font-size: 20px;
+        text-transform: lowercase;
+    }
+    .icon-big {
+        font-size: 160%;
+        display: inline-block;
+        margin-bottom: 10px;
+        padding-right: 8px;
+    }
+    
+    .ion-clock {
+        margin-left: -35px;
+        margin-top: 2px;
+    }
 }
 
 
@@ -39,5 +119,40 @@
       margin-left: 20px;
     }
   .increase-muscle{font-size: 14px;}
+    
+    
+   .shape{width: 80%;}
+    
+  .icon-big {display: none;}
+    
+    .features{
+      width:99%;
+      margin-left: 2%;
+   }
+    .contact-us{
+    width: 98%;
+    margin-left: 4px;
+    margin-top: 30px;
+    padding-bottom: 0;
+    border: solid 2px white;
+    border-radius: 25%;
+    background-color: #e67e22;    
+  }
+
+    .contact-us h1{padding-right: 25px;}
+
+    .contact-info input{
+        margin-left: 18px;
+        height: 20px;
+    }
+
+    .contact-info select{margin-left: 16px;}
+
+    input[type="submit"]{
+        padding: 0;
+        width: 60px;
+        display: block;
+        margin-right: 43%;
+    }
    
 }
